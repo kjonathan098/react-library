@@ -1,0 +1,64 @@
+/*
+
+The point of the state is that when something changes we render a new state of the website to display accordingly. Ex when a user toggles a button
+
+Definitions 
+
+State = the current state of the View 
+Set State = change the current state and re-render the page 
+
+Vanilla JS
+
+<HTML>
+      <body>
+      <div id='count'> Count 0<div>
+      <button> Add <button>
+<HTML>
+
+<script>
+const countText = document.getElementById (`count`)
+const button = document.getElementById (`button`)
+let count = 0
+
+button.addEventListenet(`click`, renderView())
+
+const renderView = () =>{
+  count ++
+  counText.innerHTML = count
+}
+
+
+})
+<script/>
+
+React Way
+
+<HTML>
+      <body>
+      <div id='count'> Count 0<div>
+      <button> Add <button>
+<HTML>
+
+button.addEventListenet(`click`, constSetState())
+
+<script>
+const state {
+  count: 0 
+}
+
+constSetState = () => {
+  state.count = state.count +1
+  renderView()
+}
+
+const renderView = () => {
+const countText = document.getElementById (`count`).innerHTML = `Count ${state.count} ` 
+}
+
+})
+
+I skipped class Components state but if needed go to lecture 3 timestamp 2:03:00
+<script/>
+
+
+*/
