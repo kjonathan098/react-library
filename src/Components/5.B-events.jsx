@@ -3,7 +3,7 @@ import reactDom from 'react-dom';
 
 const CreatedDiv = (props) => {
 	let visible = props.create;
-	if (visible == true) {
+	if (visible) {
 		return (
 			<div>
 				<h3>WTF</h3>
